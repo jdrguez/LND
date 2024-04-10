@@ -362,4 +362,524 @@ header, section, footer, aside, nav, main, article, figure{
 
 ```
 
-## Usando
+## Usando justify-content con space-between
+![imagen](img/SpaceBetween.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row nowrap;
+    
+    justify-content: space-around;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    max-width: 15%;
+    
+    border: 1px solid gray;
+    
+    }
+```
+
+## Usando justify content con space-around
+![imagen](img/spacearounf.png)
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row nowrap;
+    
+    justify-content: space-between;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    max-width: 15%;
+    
+    border: 1px solid gray;
+    
+    }
+
+```
+
+# Usando Align-items
+
+## Usando solo el align-items
+![imagen](img/align-items.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    justify-content: flex-start;
+    
+    align-items: flex-start;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    max-width: 31%;
+    
+    border: 1px solid gray;
+    
+    }
+
+```
+
+## Usando align-items flex end:
+![imagen](img/align-items-end.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    justify-content: flex-start;
+    
+    align-items: flex-end;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    max-width: 31%;
+    
+    border: 1px solid gray;
+    
+    }
+
+```
+
+##  Usando align items center
+![imagen](img/align-items-center.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    justify-content: flex-start;
+    
+    align-items: center;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    max-width: 31%;
+    
+    border: 1px solid gray;
+    
+    } 
+
+```
+
+## Usando align items stretch
+![imagen](img/strech.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    justify-content: flex-start;
+    
+    align-items: stretch;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    max-width: 31%;
+    
+    border: 1px solid gray;
+    
+    }
+
+```
+
+# Propiedades aplicables al FLEX
+
+## Propiedades
+![imagen](img/flexpropiedades.png)
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    justify-content: flex-start;
+    
+    align-items: flex-start;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    flex: 0 0 20%;
+    
+    border: 1px solid gray;
+    
+    }
+```
+
+## Ponerle una propiedad al flex
+![imagen](img/10flex.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    justify-content: flex-start;
+    
+    align-items: flex-start;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    flex: 1 0 20%;
+    
+    border: 1px solid gray;
+    
+    }
+
+```
+
+## Más propiedades
+![imagen](img/maspropiedades.png)
+
+```css 
+
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    justify-content: flex-start;
+    
+    align-items: stretch;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p:not(:nth-of-type(1)){
+    
+    border: 1px solid gray;
+    
+    flex: 1 0 20%;
+    
+    
+    }
+    
+    
+    p:nth-of-type(1){
+    
+    border: 1px solid gray;
+    
+    flex: 7 0 20%;
+    
+    }
+    
+```
+
+## Flex shrink
+![imagen](img/shrink.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row nowrap;
+    
+    justify-content: flex-start;
+    
+    align-items: stretch;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p:not(:nth-of-type(2)){
+    
+    border: 1px solid gray;
+    
+    flex: 0 1 400px;
+    
+    
+    }
+    
+    
+    p:nth-of-type(2){
+    
+    border: 1px solid gray;
+    
+    flex: 0 5 400px;
+    
+    }
+```
+
+## Más propiedades
+
+![imagen](img/MasPropiedades2.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    justify-content: flex-start;
+    
+    align-items: stretch;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    border: 5px solid gray;
+    
+    margin: 3px;
+    
+    flex: 1 0 45%;
+    
+    
+    }
+    
+```
+
+# Align self
+
+## Usandolos
+
+![imagen](img/Self.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row nowrap;
+    
+    justify-content: space-between;
+    
+    align-items: flex-start;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    
+    p{
+    
+    border: 5px solid gray;
+    
+    margin: 3px;
+    
+    flex: 1 1 15%;
+    
+    
+    }
+    
+    
+    p:nth-of-type(3){
+    
+    align-self: stretch;
+    
+    }
+    
+    p:nth-of-type(4){
+    
+    align-self: center;
+    
+    }
+```
+# Order
+
+## Usandolo
+![imagen](img/Order.png)
+
+```css
+header, section, footer, aside, nav, main, article, figure{
+
+    display: block;
+    
+    }
+    
+    .contenedorFlex{
+    
+    display: flex;
+    
+    flex-flow: row nowrap;
+    
+    justify-content: space-between;
+    
+    align-items: flex-start;
+    
+    background: #F6EBC6;
+    
+    }
+    
+    p{
+    
+    border: 5px solid gray;
+    
+    margin: 3px;
+    
+    flex: 1 1 15%;
+    
+    
+    
+    }
+    
+    
+    
+    p:nth-of-type(3){
+    
+    align-self: stretch;
+    
+    order: -1;
+    
+    }
+    
+    p:nth-of-type(4){
+    
+    align-self: center;
+    
+    }
+```

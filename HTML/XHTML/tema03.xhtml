@@ -22,14 +22,13 @@
             <label for="marca_modelo">Marca/Modelo:</label>
             <input type="text" id="marca_modelo" name="marca_modelo" /><br />
             <label for="matricula">Matrícula:</label>
-            <input type="text" id="matricula" name="matricula" /><br />
-            <label>Seleccione las características:</label><br />
-            <input type="checkbox" id="utilitario" name="caracteristicas[]" value="utilitario" checked="checked" />
-            <label for="utilitario">Utilitario</label><br />
-            <input type="checkbox" id="alta_gama" name="caracteristicas[]" value="alta_gama" checked="checked" />
-            <label for="alta_gama">Alta Gama</label><br />
-            <input type="checkbox" id="TodoTerreno" name="caracteristicas[]" value="TodoTerreno" checked="checked" />
-            <label for="TodoTerreno">Todo Terreno</label><br />
+            <input type="text" id="matricula" name="matricula" /><br/><br/>
+            <label>Seleccione las características:</label>
+            <select multiple size="5" name="caracteristicas[]">
+                <option value="1">Utilitario</option>
+                <option value="1">Todo Terreno</option>
+                <option value="1">Alta Gama</option>
+                </select>
         </fieldset>
         <fieldset>
             <legend>Otros Datos</legend>

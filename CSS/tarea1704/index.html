@@ -5,22 +5,54 @@
         <meta name="author" content=""/>
         <title>Cajas relativas absolutas</title>
         <style type="text/css" >
+            body{
+                background-color: grey;
+            }
             h1{
                 color: white;
-                background-color: green;
+                background-color: #008000;
                 text-align: center;
             }
-            .cabecera{
-                border: yellow 1px solid ;
+            #cabecera{
+                margin-top: 10px;
+                border: yellow 5px solid;
+                background-color: white;
+                width: 60%;
+                margin-left: 60px;
+            }
+            .main_box{
+                background-color: pink;
+            }
+            .cuerpo{ 
+                flex-direction: row;
+                display: -webkit-flex;
+                display: flex;
+            
             }
             .caja{
-                border: solid blue 3px;
+                border: solid blue 3px ;
+                width: 20%;
+                height: 100px;
+                background-color: grey;
                 
             }
+            div:nth-child(6),
+            div:nth-child(8){
+                background-color: red;
+                position: absolute;
+                margin: 40px;
+            }
+            #pie{
+                border: #008000 dashed;
+                background-color: white;
+            }
+
 
         </style>
     </head>
     <body>
+        <main>
+
         <h1> Prueba de posicionamiento </h1>
         <div id="cabecera" >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -37,44 +69,48 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div id="cuerpo" >
-            <div class="caja">
-                <h1>Caja 1</h1>
-            </div>
+        <div class="main_box">
+            <div id="cuerpo" >
+                <div class="caja">
+                    <h1>Caja 1</h1>
+                </div>
 
-            <div class="caja">
-                <h1>Caja 2</h1>
-            </div>
+                <div class="caja">
+                    <h1>Caja 2</h1>
+                </div>
 
-            <div class="caja">
-                <h1>Caja 3</h1>
-            </div>
+                <div class="caja">
+                    <h1>Caja 3</h1>
+                </div>
 
-            <div class="caja">
-                <h1>Caja 4</h1>
-            </div>
-            <div class="caja">
-                <h1>Caja 5</h1>
-            </div>
+                <div class="caja">
+                    <h1>Caja 4</h1>
+                </div>
+                <div class="caja">
+                    <h1>Caja 5</h1>
+                </div>
 
-            <div class="caja">
-                <h1>Caja 6</h1>
-            </div>
-            <div class="caja">
-                <h1>Caja 7</h1>
-            </div>
+                <div class="caja">
+                    <h1>Caja 6</h1>
+                </div>
+                <div class="caja">
+                    <h1>Caja 7</h1>
+                </div>
 
-            <div class="caja">
-                <h1>Caja 8</h1>
-            </div>
-            <div class="caja">
-                <h1>Caja 9</h1>
-            </div>
+                <div class="caja">
+                    <h1>Caja 8</h1>
+                </div>
+                <div class="caja">
+                    <h1>Caja 9</h1>
+                </div>
 
-            <div class="caja">
-                <h1>Caja 10</h1>
+                <div class="caja">
+                    <h1>Caja 10</h1>
+                </div>
+                <div class="cuadrado">
+                    <p></p>
+                </div>
             </div>
-
         </div>
         <div id="pie">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -85,7 +121,7 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
 
-
+        </main> 
 
     </body>
 </html>

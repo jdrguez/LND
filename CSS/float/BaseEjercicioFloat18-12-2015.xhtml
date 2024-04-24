@@ -19,20 +19,24 @@
 				float: left;
 			}
 
-			p::first-letter{
-				padding-left: 15px;
+			p::first-letter:not(letraCapital::first-letter){
+				padding-left: 20px;
 			}
 		
 			.letraCapital::first-letter{
-				border: solid 1px ;
+				border: solid 1px black;
+				height: 40px;
 				margin: 5px;
-				padding: 5px;
+				padding: 6px;
 				font-family:'Times New Roman', Times, serif ;
-				font-size: 70px;
+				font-size: 45px;
 				color: grey;
 				float: left;
 			}
 			
+			p{
+				font-size: 17px;
+			}
 			/*
 			contenedor es de 550px, tiene borde gris color de fondo naranja
 			El tipo de letra por defecto es Verdana y si no está disponible, Arial

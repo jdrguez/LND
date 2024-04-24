@@ -4,4 +4,5 @@ El html completo
 
 ![imagen1](img/cajas.png)
 
-## Posicionamiento
+## Posicionamiento relative
+![imagen2](img/posicionamiento_relativo.png)

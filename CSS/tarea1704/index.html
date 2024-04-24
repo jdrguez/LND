@@ -5,48 +5,59 @@
         <meta name="author" content=""/>
         <title>Cajas relativas absolutas</title>
         <style type="text/css" >
-            body{
-                background-color: grey;
-            }
-            h1{
-                color: white;
-                background-color: #008000;
-                text-align: center;
-            }
-            #cabecera{
-                margin-top: 10px;
-                border: yellow 5px solid;
-                background-color: white;
-                width: 60%;
-                margin-left: 60px;
-            }
-            .main_box{
-                background-color: pink;
-            }
-            .cuerpo{ 
-                flex-direction: row;
-                display: -webkit-flex;
-                display: flex;
-            
-            }
-            .caja{
-                border: solid blue 3px ;
-                width: 20%;
-                height: 100px;
-                background-color: grey;
-                
-            }
-            div:nth-child(6),
-            div:nth-child(8){
-                background-color: red;
-                position: absolute;
-                margin: 40px;
-            }
-            #pie{
-                border: #008000 dashed;
-                background-color: white;
+              body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: gray;
             }
 
+            h1 {
+                background-color: green;
+                color: white;
+                text-align: center;
+            }
+
+            #cabecera {
+                margin: 0 auto;
+                background-color: white;
+                width: 60%;
+                border: 3px solid yellow;
+            }
+
+            #cuerpo {
+                background-color: pink;
+                position: relative;
+            }
+
+            #cuerpo .caja {
+                width: 20%;
+                height: 100px;
+                background-color: gray;
+                border: 4px solid blue;
+                display: inline-block;
+                position: relative;
+            }
+
+            #cuerpo .caja:nth-child(6){
+                background-color: red;
+                opacity: 80%;
+                bottom: 40px;
+                left: 40px;
+                z-index: 1;
+            }
+
+            #cuerpo .caja:nth-child(8){
+                background-color: darkred;
+                opacity: 70%;
+                position: absolute;
+                top: 13%;
+                left: 75%;
+                z-index: 1;
+            }
+
+            #pie {
+                background-color: white;
+                border: 3px dashed green;
+            }
 
         </style>
     </head>
@@ -69,48 +80,45 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="main_box">
-            <div id="cuerpo" >
-                <div class="caja">
-                    <h1>Caja 1</h1>
-                </div>
-
-                <div class="caja">
-                    <h1>Caja 2</h1>
-                </div>
-
-                <div class="caja">
-                    <h1>Caja 3</h1>
-                </div>
-
-                <div class="caja">
-                    <h1>Caja 4</h1>
-                </div>
-                <div class="caja">
-                    <h1>Caja 5</h1>
-                </div>
-
-                <div class="caja">
-                    <h1>Caja 6</h1>
-                </div>
-                <div class="caja">
-                    <h1>Caja 7</h1>
-                </div>
-
-                <div class="caja">
-                    <h1>Caja 8</h1>
-                </div>
-                <div class="caja">
-                    <h1>Caja 9</h1>
-                </div>
-
-                <div class="caja">
-                    <h1>Caja 10</h1>
-                </div>
-                <div class="cuadrado">
-                    <p></p>
-                </div>
+    
+        <div id="cuerpo" >
+            <div class="caja">
+                <h1>Caja 1</h1>
             </div>
+
+            <div class="caja">
+                <h1>Caja 2</h1>
+            </div>
+
+            <div class="caja">
+                <h1>Caja 3</h1>
+            </div>
+
+            <div class="caja">
+                <h1>Caja 4</h1>
+            </div>
+            <div class="caja">
+                <h1>Caja 5</h1>
+            </div>
+
+            <div class="caja">
+                <h1>Caja 6</h1>
+            </div>
+            <div class="caja">
+                <h1>Caja 7</h1>
+            </div>
+
+            <div class="caja">
+                <h1>Caja 8</h1>
+            </div>
+            <div class="caja">
+                <h1>Caja 9</h1>
+            </div>
+
+            <div class="caja">
+                <h1>Caja 10</h1>
+            </div>
+
         </div>
         <div id="pie">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
